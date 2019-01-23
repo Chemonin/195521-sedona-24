@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Илья Чемонин](https://up.htmlacademy.ru/htmlcss/24/user/195521).
-* Наставник: [Дмитрий Гуляев] (https://htmlacademy.ru/profile/dima).
+* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
 
 ---
 
