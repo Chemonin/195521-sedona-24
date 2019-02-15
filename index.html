@@ -21,7 +21,7 @@
 		<section class="welcome-part">
 			<h2 class="visually-hidden">Welcome to Sedona</h2>
 			<img class="welcome-part-background" src="img/welcome-background.jpg" width="300" height="300" alt="background photo">
-			<img class="welcome-logo" src="img/welcome.svg" width="300" height="300" alt="welcome-logo">
+			<img class="welcome-logo" src="img/welcome.svg" width="300" height="300" alt="Добро пожаловать в Седону">
 		</section>
 		<section class="reasons">
 			<h2>
@@ -94,31 +94,53 @@
 		<ul>
 			<li>
 				<a class="social-button" href="#">
-					<img src="img/twit.svg" width="100" height="100" alt="twitter">
+					<img src="img/twit.svg" width="100" height="100" alt="Седона в Твиттере">
 				</a>
 			</li>
 			<li>
 				<a class="social-button" href="#">
-					<img src="img/fb-icon.svg" width="100" height="100" alt="facebook">
+					<img src="img/fb-icon.svg" width="100" height="100" alt="Седона в Фэйсбук">
 				</a>
 			</li>
 			<li>
 				<a class="social-button" href="#">
-					<img src="img/youtube.svg" width="100" height="100" alt="Youtube">
+					<img src="img/youtube.svg" width="100" height="100" alt="Седона на Ютьюб">
 				</a>
 			</li>
 		</ul>
       <p class="footer-copyright">
         <b>Разработано:</b> 
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-			<img src="img/logo_academy.svg" width="100" height="50" alt="HTML Academy">
+			<img src="img/logo_academy.svg" width="100" height="50" alt="Сайт HTML Academy">
 		</a>
       </p>
     </footer>   
     
     <section class="modal-searching">
-      <h2>Поиск гостиницы в Седоне</h2>
-      <!-- Здесь будет форма -->
+		<h2>Поиск гостиницы в Седоне</h2>
+		<form class="searching-form" action="https://echo.htmlacademy.ru" method="post">
+			<p class="searching-item">
+				<label for="searching-date-checkin">Дата заезда:</label>
+				<input id="searching-date-checkin" type="date" name="date" value="">
+			</p>
+			<p class="searching-item">
+				<label for="searching-date-checkout">Дата выезда:</label>
+				<input id="searching-date-checkout" type="date" name="date" value="">
+			</p>
+			<p class="searching-item">
+				<label for="searching-number-of-adults">Взрослые:</label>
+				<button class="button-adult-increment" type="button">Прибавить</button>
+				<input id="searching-number-of-adults" type="number" name="number" value="" placeholder="2">
+				<button class="button-adult-decrement" type="button">Убавить</button>
+			</p>
+			<p class="searching-item">
+				<label for="searching-number-of-children">Дети:</label>
+				<button class="button-children-increment" type="button">Прибавить</button>
+				<input id="searching-number-of-children" type="number" name="number" value="" placeholder="0">
+				<button class="button-adult-decrement" type="button">Убавить</button>
+			</p>
+			<button class="button" type="submit">Найти</button>	
+		</form>
     </section>
   </body>
 </html>
