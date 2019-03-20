@@ -12,10 +12,10 @@
 		<a href="index.html"><img class="main-header-logo" src="img/logo.svg" alt="Логотип городка Седона"></a>
 		<nav class="main-navigation">
 			<ul class="site-navigation">
-				<li><a class="site-navigation-left" href="info.html">Информация</a></li>
-				<li><a class="site-navigation-left" href="media.html">Фото и видео</a></li>
-				<li><a class="site-navigation-right" href="map.html">Карта штата</a></li>
-				<li><a class="site-navigation-right" href="Sedona-hotels.html">Гостиницы</a></li>
+				<li class="site-navigation-left"><a href="info.html">Информация</a></li>
+				<li class="site-navigation-left"><a href="media.html">Фото и видео</a></li>
+				<li class="site-navigation-right"><a href="map.html">Карта штата</a></li>
+				<li class="site-navigation-right site-navigation-current"><a href="#">Гостиницы</a></li>
 			</ul>
 		</nav> 
 	</header>
@@ -25,53 +25,114 @@
 			<h2 class="visually-hidden">Поиск гостиницы</h2>
 			<!-- Форма поиска -->
 		</section>
+		<section class="sorting">
+			<h2 class="visually-hidden">Сортировка поиска</h2>
+			<span>Найдено: 3</span>
+			<div class="sorting-form">
+				<p>Сортировка:</p>
+				<ul class="sorting-method">
+					<li><button class="sorting-method-item" disabled>по цене</button></li>
+					<li><button class="sorting-method-item">по типу</button></li>
+					<li><button class="sorting-method-item">по рейтингу</button></li>
+				</ul>
+			</div>
+			<ul class="sorting-rank">
+				<li>
+					<button class="sorting-rank-select">
+						<svg class="sorting-rank-indicator" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 0L0 10h11z"/></svg>
+					</button>
+				</li>
+				<li>
+					<button class="sorting-rank-select" disabled>
+						<svg class="sorting-rank-indicator" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#81b3d2" d="M5.5 10L0 0h11"/></svg>
+					</button>
+				</li>
+			</ul>
+		</section>
 		<section class="searching-result">
 			<h2 class="visually-hidden">Выбор гостиницы</h2>
 			<ul class="hotels-list">
 				<li class="hotels-list-item">
 					<img src="img/prev-amara.jpg" width="100" height="100" alt="Фото гостиницы Амара Ресорт">
-					<a href="#"><h3 class="hotel-name">Amara Resort & Spa</h3></a>
-					<span class="hotel-category">гостиница</span>
-					<span class="hotel-price">от 4000р.</span>
-					<a class="more-info" href="#">Подробнее</a>
-					<a class="reserve" href="#">Забронировать</a>
-					<p class="ranking">
-						<img src="img/star.svg" width="10" height="10" alt="Рейтинг отеля"><!-- количество звезд можно менять через стили -->
-						<span> рейтинг: 8,5</span>
-					</p>
+					<div class="hotels-item-description">
+						<a class="hotel-name" href="#"><h3>Amara Resort & Spa</h3></a>
+						<span class="hotel-category">гостиница</span>
+						<span class="hotel-price">от 4000р.</span>
+						<a class="more-info" href="#">Подробнее</a>
+						<a class="reserve" href="#">Забронировать</a>
+					</div>
+					<div class="ranking">
+						<div class="ranking-star">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+								<path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+								<path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+								<path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+								<path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+							</svg>
+						</div>
+						<p class="ranking-num">рейтинг: 8,5</p>
+					</div>
 				</li>
 				<li class="hotels-list-item">
 					<img src="img/prev-quail.jpg" width="100" height="100" alt="Фото мотеля Дезерт Квали">
-					<a href="#"><h3 class="hotel-name">Desert Quail Inn</h3></a>
-					<span class="hotel-category">мотель</span>
-					<span class="hotel-price">от 3000р.</span>
-					<a class="more-info" href="#">Подробнее</a>
-					<a class="reserve" href="#">Забронировать</a>
-					<p class="ranking">
-						<img src="img/star.svg" width="10" height="10" alt="Рейтинг отеля"><!-- количество звезд можно менять через стили -->
-						<span> рейтинг: 8,9</span>
-					</p>
+					<div class="hotels-item-description">
+						<a class="hotel-name href="#"><h3>Desert Quail Inn</h3></a>
+						<span class="hotel-category">мотель</span>
+						<span class="hotel-price">от 3000р.</span>
+						<a class="more-info" href="#">Подробнее</a>
+						<a class="reserve" href="#">Забронировать</a>
+					</div>
+					<div class="ranking">
+						<div class="ranking-star">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+								<path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+								<path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+								<path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+							</svg>
+						</div>
+						<p class="ranking-num">рейтинг: 8,9</p>
+					</div>
 				</li>
 				<li class="hotels-list-item">
 					<img src="img/prev-villadiablo.jpg" width="100" height="100" alt="Фото апартаментов Поко Диабло">
-					<a href="#"><h3 class="hotel-name">Villas at Poco Diablo</h3></a>
-					<span class="hotel-category">апартаменты</span>
-					<span class="hotel-price">от 2000р.</span>
-					<a class="more-info" href="#">Подробнее</a>
-					<a class="reserve" href="#">Забронировать</a>
-					<p class="ranking">
-						<img src="img/star.svg" width="10" height="10" alt="Рейтинг отеля"><!-- количество звезд можно менять через стили -->
-						<span> рейтинг: 9,2</span>
-					</p>
+					<div class="hotels-item-description">
+						<a class="hotel-name" href="#"><h3>Villas at Poco Diablo</h3></a>
+						<span class="hotel-category">апартаменты</span>
+						<span class="hotel-price">от 2000р.</span>
+						<a class="more-info" href="#">Подробнее</a>
+						<a class="reserve" href="#">Забронировать</a>
+					</div>
+					<div class="ranking">
+						<div class="ranking-star">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+								<path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+								<path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
+							</svg>
+						</div>
+						<p class="ranking-num">рейтинг: 9,2</p>
+					</div>
 				</li>
 			</ul>
 		</section>	
 	</main>
-	<footer class="main-footer">
+	<footer class="hotel-footer">
 			<div class="footer-content">
 				<p class="footer-hashtag">#visitSEDONA</p>
 				<ul class="footer-social">
-					<li><a class="social-button" href="#">
+					<li>
+						<a class="social-button" href="#">
 							<span class="visually-hidden">Седона в Твиттере</span>
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
 								<path fill="#FFF" fill-opacity="1" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 
@@ -83,14 +144,16 @@
 							</svg>
 						</a>
 					</li>
-					<li><a class="social-button" href="#">
+					<li>
+						<a class="social-button" href="#">
 							<span class="visually-hidden">Седона в Фэйсбук</span>
 							<svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
 								<path fill="#FFF" fill-opacity="1" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
 							</svg>
 						</a>
 					</li>
-					<li><a class="social-button" href="#">
+					<li>
+						<a class="social-button" href="#">
 							<span class="visually-hidden">Седона на Ютьюб</span>
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
 								<path fill="#FFF" fill-opacity="1" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 
@@ -101,7 +164,7 @@
 				</ul>
 				<p class="footer-copyright">
 					<b>Website by</b> 
-					<a href="https://htmlacademy.ru/intensive/htmlcss">
+					<a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
 						<span class="visually-hidden">Сайт HTML Academy</span>
 						<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.08 36.85"><title>logo-htmlacademy-small1</title>
 							<path d="M44.61,26.88a2,2,0,0,0,.55-0.1v1.33a3.25,3.25,0,0,1-1.18.21,1.67,1.67,0,0,1-1.67-1,4.84,4.84,0,0,1-3.14,
