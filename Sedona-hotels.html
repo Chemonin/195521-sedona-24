@@ -21,9 +21,59 @@
 	</header>
 	<main>
 		<h1 class="visually-hidden">Гостиницы</h1>
-		<section class="filter">
+		<section class="filters">
 			<h2 class="visually-hidden">Поиск гостиницы</h2>
-			<!-- Форма поиска -->
+			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+				<fieldset>
+					<legend>инфраструктура:<legend>
+					<ul>
+						<li class="filter-condition">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+							<label for="filter-pool">бассейн</label>
+						</li>
+						<li class="filter-condition">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking" >
+							<label for="filter-parking">парковка</label>
+						</li>
+						<li class="filter-condition">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wifi" id="filter-wifi" >
+							<label for="filter-wifi">wi-fi</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>тип жилья:<legend>
+					<ul>
+						<li class="filter-condition">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+							<label for="filter-hotel">гостиница</label>
+						</li>
+						<li class="filter-condition">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+							<label for="filter-motel">мотель</label>
+						</li>
+						<li class="filter-condition">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartment" id="filter-apartment" checked>
+							<label for="filter-apartment">апартаменты</label>
+						</li>
+					</ul>
+				</fieldset>
+				<div class="price-range">
+					<div class="price-range-title">Стоимость в сутки (р):</div>
+					<div class="price-controls">
+						<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+						<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+					</div>
+					<div class="range-controls">
+						<div class="scale">
+							<div class="bar"></div>
+						</div>
+						<div class="range-toggle range-toggle-min"></div>
+						<div class="range-toggle range-toggle-max"></div>
+					</div>
+					<button type="submit" class="filter-button">показать</button>
+				</div>
+			</form>
 		</section>
 		<section class="sorting">
 			<h2 class="visually-hidden">Сортировка поиска</h2>
@@ -82,7 +132,7 @@
 				<li class="hotels-list-item">
 					<img src="img/prev-quail.jpg" width="100" height="100" alt="Фото мотеля Дезерт Квали">
 					<div class="hotels-item-description">
-						<a class="hotel-name href="#"><h3>Desert Quail Inn</h3></a>
+						<a class="hotel-name" href="#"><h3>Desert Quail Inn</h3></a>
 						<span class="hotel-category">мотель</span>
 						<span class="hotel-price">от 3000р.</span>
 						<a class="more-info" href="#">Подробнее</a>
