@@ -650,6 +650,7 @@ label[for="searching-number-of-children"] {
 .footer-content {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	background-color: #ffffff;
 	opacity: 0.9;
 	width: 100%;
@@ -659,24 +660,25 @@ label[for="searching-number-of-children"] {
 }	
 
 .footer-hashtag {
+	margin: 0;
+	padding: 0;
+	width: 210px;
+	text-align: center;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
-	margin-left: 132px;
-	margin-top: 46px;
+	margin-left: 94px;
 	color: #000000;
 }
 
 .footer-social {
-	width: 150px;
-	justify-content: space-between;
+	width: 210px;
+	justify-content: center;
 	flex-wrap: wrap;
 	display: flex;
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	margin-top: 36px;
-	margin-left: 27px;
 }
 
 .social-button {
@@ -686,6 +688,11 @@ label[for="searching-number-of-children"] {
 	background-color: #81b3d2;
 	width: 46px;
 	height: 48px;
+}
+
+.footer-social li:nth-child(2) {
+	margin-left: 6px;
+	margin-right: 6px;
 }
 
 .social-button:hover,
@@ -703,10 +710,11 @@ label[for="searching-number-of-children"] {
 
 .footer-copyright {
 	display: flex;
+	justify-content: center;
+	width: 210px;
 	margin: 0;
 	padding: 0;
-	margin-right: 101px;
-	margin-top: 39px;
+	margin-right: 94px;
 }
 
 .footer-copyright b {
